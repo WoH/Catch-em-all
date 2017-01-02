@@ -37,6 +37,7 @@
     "rollup-plugin-replace": "^1.1.1",
     "rxjs": "5.0.0-beta.12",
     "socket.io-client": "^1.5.0",
+    "sw-toolbox": "^3.4.0",
     "zone.js": "0.6.21"
   },
   "devDependencies": {
@@ -45,7 +46,8 @@
   },
   "config": {
     "ionic_bundler": "rollup",
-    "ionic_rollup": "./config/rollup.config.js"
+    "ionic_rollup": "./config/rollup.config.js",
+    "ionic_copy": "./config/copy.config.js"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
