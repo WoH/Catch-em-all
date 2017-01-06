@@ -3,13 +3,13 @@
   "description": "CatchEmAll: An Ionic project",
   "scripts": {
     "build": "ionic-app-scripts build",
-    "build:browser": "cross-env REQUEST_PROXY=true ionic build browser",
-    "build:android": "cross-env REQUEST_PROXY=false ionic build android",
+    "build:android": "cross-env REQUEST_PROXY=false ionic-app-scripts build android",
+    "build:browser": "cross-env REQUEST_PROXY=true ionic-app-scripts build browser",
     "clean": "ionic-app-scripts clean",
-    "ionic:serve": "cross-env REQUEST_PROXY=false ionic-app-scripts serve",
-    "ionic:build": "build",
-    "ionic:build:android": "build:android",
-    "ionic:build:browser": "build:browser"
+    "ionic:build": "cross-env REQUEST_PROXY=true ionic-app-scripts build",
+    "ionic:build:android": "cross-env REQUEST_PROXY=false ionic-app-scripts build android",
+    "ionic:build:browser": "cross-env REQUEST_PROXY=true ionic-app-scripts build browser",
+    "ionic:serve": "cross-env REQUEST_PROXY=false ionic-app-scripts serve"
   },
   "dependencies": {
     "@angular/common": "2.2.1",
